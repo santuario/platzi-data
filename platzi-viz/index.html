@@ -10,11 +10,14 @@
   <body>
     <a-scene background="color: #80C8BD">
       <a-assets>
+        <audio id="blip1" src="../audio/321103__nsstudios__blip1.wav"></audio>
+        <audio id="blip2" src="../audio/321104__nsstudios__blip2.wav"></audio>
+
         <img id="platzi" src="../assets/img/Platzi_Logo.png">
         <img id="shadow2" src="../assets/img/radial-shadow-2.png">
-        <img id="ui1" src="ui-1.png">
-        <img id="ui2" src="ui-2.png">
-        <img id="ui3" src="ui-3.png">
+        <img id="ui1" src="../img/ui-1.png">
+        <img id="ui2" src="../img/ui-2.png">
+        <img id="ui3" src="../img/ui-3.png">
       </a-assets>
 
       <a-curvedimage src="#ui3" radius="5.7" theta-length="180" height="9"
@@ -30,6 +33,12 @@
       <a-entity position="0 0 1.5">
         <a-camera></a-camera>
       </a-entity>
+
+    <!-- Sounds. -->
+      <a-entity sound="autoplay: true; src: #blip1"></a-entity>
+      <a-entity sound="autoplay: true; src: #blip2"></a-entity>
+
+
     </a-scene>
   </body>
 </html>
