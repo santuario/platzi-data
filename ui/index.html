@@ -8,9 +8,8 @@
 <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
   </head>
   <body>
-    <a-scene renderer="colorManagement: true;">
+    <a-scene background="color: #80C8B">
       <a-assets>
-        <a-asset-item id="engine" src="models/engine.glb"></a-asset-item>
         <a-mixin id="image" geometry="height: 2; width: 2"></a-mixin>
         <a-mixin id="toggleAnimation" animation="property: visible; from: false; to: true; dur: 1" visible="false"></a-mixin>
         <audio id="blip1" src="audio/321103__nsstudios__blip1.wav"></audio>
@@ -36,9 +35,6 @@
         <a-camera position="0 0 0" near="0.1"></a-camera>
       </a-entity>
 
-      <a-entity position="0 0 -3">
-        <a-gltf-model src="#engine" rotation="90 0 0" scale="18 18 18"></a-gltf-model>
-      </a-entity>
 
       <a-entity id="wall-lights" position="-7.25 1.5 2.9" rotation="0 90 0" scale="1.25 1.25 1.25">
         <a-entity position="0 0 0" scale="0.05 0.05 0.05">
